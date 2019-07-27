@@ -11,7 +11,7 @@ public class PessoaFisica extends Pessoa {
 		super();
 	}
 
-	public PessoaFisica(String name, Double rendaAnual, Double gstoSaude) {
+	public PessoaFisica(String name, Double rendaAnual, Double gastoSaude) {
 		super(name, rendaAnual);
 		this.gastoSaude = gastoSaude;
 		

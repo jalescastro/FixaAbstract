@@ -25,8 +25,11 @@ public class PessoaJuridica extends Pessoa {
 
 	@Override
 	public double impostoPago() {
-		
-		return 0;
+		if (getNumeroFuncionarios() <= 10) {
+			return  getRendaAnual()*0.16;
+		}else {
+			return getRendaAnual()*0.14;	
+		}
 	}
 
 }
